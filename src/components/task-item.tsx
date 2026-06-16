@@ -89,6 +89,7 @@ export function TaskItem({ task }: { task: Task }) {
       </div>
       <time
         dateTime={new Date(task.createdAt).toISOString()}
+        suppressHydrationWarning
         className="hidden text-xs text-zinc-400 sm:block dark:text-zinc-600"
       >
         {new Date(task.createdAt).toLocaleString()}
